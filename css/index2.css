@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.grandpa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #021823;
+}
+.parent {
+  position: relative;
+  width: 1000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child-img {
+  width: 360px;
+  height: 300px;
+}
+.child-img img {
+  margin-top: -500px;
+  width: 100%;
+  animation-name: image;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: transparent;
+}
+.text-1,
+.text-2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: -300px;
+  font-size: 71px;
+  color: white;
+  animation-name: child-text;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.text-2 {
+  animation-name: child-text-2;
+}
+.child:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.child:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.child:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.child:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.child:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.child:nth-child(7) {
+  animation-delay: 0.5s;
+}
+.child:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.child:nth-child(9) {
+  animation-delay: 0.3s;
+}
+.child:nth-child(10) {
+  animation-delay: 0.2s;
+}
+.child:nth-child(11) {
+  animation-delay: 0.1s;
+}
+@keyframes image {
+  0% {
+    transform: translatey(0);
+    transform: scale(1);
+  }
+  50% {
+    transform: translatey(300px) scale(1.3);
+  }
+  100% {
+    transform: translatey(250px);
+  }
+}
+
+@keyframes child-text {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-70px);
+  }
+  75% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatey(110px);
+  }
+}
+
+@keyframes child-text-2 {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(70px);
+  }
+  75% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatey(110px);
+  }
+}
