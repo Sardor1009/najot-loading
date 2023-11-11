@@ -62,20 +62,21 @@
   animation-name: child-text-2;
 }
 .child:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.child:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.child:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.child:nth-child(4) {
-  animation-delay: 0.4s;
-}
-.child:nth-child(5) {
-  animation-delay: 0.5s;
-}
+    animation-delay: 0.1s;
+  }
+  .child:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .child:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .child:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .child:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+   
 .child:nth-child(7) {
   animation-delay: 0.5s;
 }
